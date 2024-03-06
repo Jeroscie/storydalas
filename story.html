@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0C27B;
+        }
+.title{
+    text-align: center;
+    font-family: Source Code Pro;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        .story {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .story img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .story h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Simple Story Website by Dalas Dale Castro</h1>
+    <div class="container">
+        <h1>Stories</h1>
+        <div class="story-grid">
+            <div class="story" onclick="showStory('story1.html')">
+                <img src="story1.jpg" alt="Story 1">
+                <h2>The Three Little Pigs</h2>
+            </div>
+            <div class="story" onclick="showStory('story2.html')">
+                <img src="story2.jpg" alt="Story 2">
+                <h2>Little Red Riding Hood</h2>
+            </div>
+            <div class="story" onclick="showStory('story3.html')">
+                <img src="story3.jpg" alt="Story 1">
+                <h2>The Velveteen Rabbit
+                </h2>
+            </div>
+            <div class="story" onclick="showStory('story4.html')">
+                <img src="story4.jpg" alt="Story 2">
+                <h2>Jack and the Beanstalk
+                </h2>
+            </div>
+            <div class="story" onclick="showStory('story5.html')">
+                <img src="story5.jpg" alt="Story 1">
+                <h2>The Tale of Peter Rabbit
+                </h2>
+            </div>
+            <div class="story" onclick="showStory('story6.html')">
+                <img src="story6.jpg" alt="Story 2">
+                <h2>The Elves and The Shoemaker
+                </h2>
+            </div>
+            <!-- Add more stories as needed -->
+        </div>
+    </div>
+
+    <script>
+        function showStory(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
